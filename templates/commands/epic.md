@@ -15,10 +15,10 @@ The text the user typed after `/epics` in the triggering message **is** the proj
 
 Given that project description, do this:
 
-1. Run the script `{SCRIPT}` from repo root and parse its JSON output for BRANCH_NAME and SPEC_FILE. All file paths must be absolute.  
+1. Run the script `{SCRIPT}` from repo root and parse its JSON output for BRANCH_NAME and EPIC_FILE. All file paths must be absolute.  
    **IMPORTANT** You must only ever run this script once. The JSON is provided in the terminal as output — always refer to it to get the actual content you're looking for.  
 2. Load `templates/epic-template.md` to understand required sections.  
-3. Write the epic breakdown to SPEC_FILE using the template structure, replacing placeholders with concrete details derived from the project description (arguments) while preserving section order and headings.  
+3. Write the epic breakdown to EPIC_FILE using the template structure, replacing placeholders with concrete details derived from the project description (arguments) while preserving section order and headings.  
    - Fill in the Execution Flow, Guidelines, Epics (N epics with business goals, scope in/out, notes), and Checklists as per template.  
    - Mark missing information with `[NEEDS CLARIFICATION: specific question]`.  
 4. Report completion with branch name, spec file path, and readiness for the next phase.
